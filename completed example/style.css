@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, sans-serif; /* tries Arial first, then sans-serif */
+    margin:0;   /* body has some margin built in */
+    background-image: url(images/mountain_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+}
+
+header{
+    height:48px;
+    background-color: #000; /* American spelling */
+    margin-bottom:1em;
+}
+header a:link, header a:visited{ /* comma in selector to target multiple selectors */
+    color:#0192d3;
+    line-height: 48px;  /* setting line-height to the same as header height centers the text vertically */
+}
+
+main{   
+    width:960px;
+    margin: 0 auto; /* [top and bottom] [left and right] */
+    background-color: rgba(255,255,255,0.95);
+    overflow: hidden;   /* used to fix the floats on the sections */
+}
+
+video{    
+    margin-bottom: 1em;
+}
+
+h1{
+    font-size: 3em;
+    text-transform:uppercase;
+    background-color: #000;
+    color: #fff;
+    padding:0 0 0 10px; /* top right bottom left */
+    margin:0;    /* all sides at once */
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+}
+
+section{
+/*    background-color: #fce29c; */
+    width:460px;
+    float:left;
+    margin: 0 10px 64px 10px;
+}
+section.col-left{   /
+    background-color:#9fd6ff;
+}
+section img{
+    display: block; /* this fixes a minor issue with images getting a bit of extra margin on the bottom */
+}
+
+p{
+    line-height: 1.6;   /* without units, this value is treated as a multiplier of font-size. ie: 16px * 1.6 = 25.6px  */
+}
+
+/* links should be styled in the order: link, visited, hover, active */
+section a:link{
+    text-decoration: none;
+    background-color: #ff0;
+}
+section a:visited{
+    text-decoration: none;
+    background-color: #ff0;
+}
+section a:hover{
+    background-color: #000;
+    color:#fff;
+}
+section a:active{
+    background-color:#0ff;
+    color:#000;
+}
+
+footer{
+    width:100%;
+    height:48px;
+    background-color: #000000;
+    margin-top:1em;
+    position: fixed;
+    bottom:0;
+}
+footer p{
+    color: #fff;
+    margin-top:0;
+}
