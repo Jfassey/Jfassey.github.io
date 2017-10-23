@@ -1,0 +1,153 @@
+body{
+    font-family: Arial, sans-serif; /* tries Arial first, then sans-serif */
+    background-color: #5D5D5D;
+    margin: 0;
+    
+    
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+    background: linear-gradient(#85bac8, #5c91c2);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #6C1630;
+  outline: 1px solid slategrey;
+}
+
+
+main{
+/*    background: linear-gradient(#9BD2CB, #4277BC);*/
+    background: url(images/Resort2.png), linear-gradient(#9BD2CB, #5c91c2);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+   
+    max-width:1920px;
+    
+    
+    margin:0 auto;
+ 
+   
+}
+
+a:link {
+    text-decoration: none;
+}
+ 
+
+p {
+    margin-top: 0;
+}
+
+header{
+    width: 150px;
+    height: 30px;
+    background-color: #6C1630;
+    padding: 12px 5px 0px 20px;;
+    margin: 2em 0px 10% 790px;
+    float: right;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.2em;
+}
+
+.less{
+    font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.more{
+  
+    color: rgba(255, 255, 255, 1)
+}
+
+.img1{
+    height: auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative; 
+   
+}
+
+
+video{
+  display:block;
+	margin: 1em auto -7% auto;
+    width:80%;
+    position: relative;
+    z-index: +1;
+/*    background-color: black;*/
+    
+}
+    
+h1{
+    
+    margin: 15% 1em 0.5em 25%;
+    font-size: 18vmin;
+    padding: 0;
+    float: left;
+    font-family: 'Roboto' ,sans-serif;
+    letter-spacing: 0.2em;
+    color: #6C1630;   
+}
+
+.h1less{
+   font-family: 'Roboto' , sans-serif; 
+    font-weight: 100;
+}
+
+.info{
+    
+    width: 50%;
+    columns: 18em;
+    column-gap(1em);
+    height: auto;
+    margin: 0px 15% 0 25%;
+    padding-top: 15px;
+    padding-bottom: 40%;
+    color: white;
+    font-family:sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+    border-top: 3px solid #6C1630; 
+    overflow: hidden;
+    
+}
+
+ .img2{
+    height: auto;
+    width: 100%;
+    max-width: inherit;
+    position: absolute;
+/*    bottom: -50em;*/
+}
+
+
+
+    
+
+
+
+.lesslink:hover {
+    color: white;
+    text-decoration: overline;
+  
+}
+
+.morelink:hover {
+    color: white;
+    text-decoration: overline;
+  
+}
+
+
+
